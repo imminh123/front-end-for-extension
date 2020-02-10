@@ -66,21 +66,36 @@ body {
     background-color: #fff; }
     .container .noteDetail .dropdown {
       color: #212121;
-      padding: 5px 20px; }
+      padding: 5px 5px 5px 20px; }
       .container .noteDetail .dropdown .dropdown-btn {
         display: flex;
         justify-content: space-between;
         align-items: center;
         cursor: pointer; }
       .container .noteDetail .dropdown .dropdown-content {
-        width: 100%; }
+        filter: drop-shadow(0px 2px 6px rgba(35, 81, 235, 0.1));
+        background-color: #fff;
+        padding: 8px 10px;
+        border-radius: 5px;
+        position: absolute; }
         .container .noteDetail .dropdown .dropdown-content input {
           background: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png") top left no-repeat;
           height: 22px;
+          width: 91%;
+          font-size: 14px;
+          color: #2351EB;
           border-radius: 5px;
           background-color: #F2F5FF;
           border: none;
-          padding: 6.5px 8px; }
+          padding: 6.5px 8px;
+          margin-bottom: 5px; }
+        .container .noteDetail .dropdown .dropdown-content .item {
+          display: flex;
+          align-items: center; }
+          .container .noteDetail .dropdown .dropdown-content .item svg path {
+            fill: #2351EB; }
+          .container .noteDetail .dropdown .dropdown-content .item p {
+            margin: 6px 0; }
       .container .noteDetail .dropdown svg path {
         fill: #616161; }
     .container .noteDetail textarea {
